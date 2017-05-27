@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name":         "BetterSimplenote",
+  "description":  "Add key combos; change CSS",
+  "version":      "0.0.4",
+  "permissions": [
+    "https://app.simplenote.com/"
+  ],
+  "background": {
+    "scripts": []
+  },
+  "browser_action": {
+    "default_icon": {
+      "64": "extension_icon.png"
+    }
+  },
+  "content_scripts": [ {
+      "exclude_globs":    [  ],
+      "include_globs":    [ "*" ],
+      "js":               [ "bundle.js" ],
+      "matches":          [ "https://app.simplenote.com/" ],
+      "run_at":           "document_idle"
+  } ],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline'",
+  "icons": {
+    "64": "extension_icon.png"
+  }
+}
