@@ -7,6 +7,7 @@
 
 // You might want to consider using the Ace Editor bookmarklet instead.
 
+// Outdated information:
 // Install by in Bookmark Manager, adding a bookmark and setting its URL to be
 // javascript:(...), where (...) is the entire code below starting with (function(){ and so on.
 
