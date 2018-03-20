@@ -70,8 +70,8 @@ tools =
       throw "error 5: must have two (one in- and one out-) timestamp. you had #{parts}"
     minutesPair = parts.map tools.hhmmToMinutes
     minutesPair.map (minutes) ->
-      if !minutes
-        throw "error 6: timestamp pair with invalid duration: #{minutes}" 
+      if !minutes? or minutes < 0
+        throw "error 6: timestamp with invalid value in minutes: #{minutes}" 
     minutesPair
   lineToTimeWorking: (line) ->
     [date, info] = tools.splitIntoDateAndInfo line
