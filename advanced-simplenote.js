@@ -108,6 +108,8 @@ function SetupAdvanced() {
 
   document.addStyle('.notes li { padding: 3px; }');
   document.addStyle('.notes li.selected { background: #eef3f8 linear-gradient(#cfd3d5, #cfd4d8); }');
+  document.addStyle('.wrapper { bottom: 0px; }');
+  document.addStyle('ul.footer { display: none; }');
 }
 
 module.exports = SetupAdvanced;
